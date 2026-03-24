@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: nginx:latest
+    build: .
     container_name: kadir_web
     ports:
       - "7000:80"
-    volumes:
-      - .:/usr/share/nginx/html
-    restart: always
